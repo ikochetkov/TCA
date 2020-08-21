@@ -9,9 +9,10 @@ createCustomElement('x-431441-template-card-assist', {
   view,
   styles,
   properties: {
-    modalData: {default:{}},
-    loader:{default:true},
-    incidents: {default:null}
+    modalData: { default: {} },
+    loader: { default: true },
+    incidents: { default: null },
+    deletedAlert: { default: false }
   },
   actionHandlers: actions
 });

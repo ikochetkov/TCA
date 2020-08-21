@@ -4,6 +4,12 @@ import { createHttpEffect } from '@servicenow/ui-effect-http';
 
 export default {
 
+  'NOW_ALERT#ACTION_CLICKED': (coeffects) => {
+    console.log('close here');
+    console.log(coeffects);
+    coeffects.updateProperties({deletedAlert: false});
+  },
+
   [COMPONENT_BOOTSTRAPPED]: (coeffects) => {
     const { dispatch } = coeffects;
     dispatch('FETCH_INCIDENTS', {
@@ -44,6 +50,7 @@ export default {
     dispatch('FETCH_INCIDENTS', {
       sysparm_display_value: true
     });
+    coeffects.updateProperties({deletedAlert: true});
   },
 
   'FETCH_INCIDENTS_SUCCESS': (coeffects) => {
