@@ -1,0 +1,14 @@
+{
+	"components": {
+		"x-431441-template-card-assist": {
+			"innerComponents": ["now-template-card-assist"],
+			"uiBuilder": {
+				"associatedTypes": ["global.core"],
+				"label": "Task 3. Card list",
+				"icon": "chart-forecast-fill",
+				"description": "Stock Tracking component"
+			}
+		}
+	},
+	"scopeName": "x_431441_test_te_0"
+}
